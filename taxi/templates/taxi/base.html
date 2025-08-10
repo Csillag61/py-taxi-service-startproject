@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Taxi Service{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Taxi Service Management</h1>
+        <nav>
+            <a href="/admin/">Admin</a> | 
+            <a href="/admin/taxi/driver/">Drivers</a> | 
+            <a href="/admin/taxi/car/">Cars</a> | 
+            <a href="/admin/taxi/manufacturer/">Manufacturers</a>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}
+        <p>Welcome to the Taxi Service management system.</p>
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Taxi Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
